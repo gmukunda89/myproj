@@ -1,0 +1,38 @@
+{
+  "name": "application",
+  "version": "1.0",
+  "oeversion": "12.8",
+  "graphicalMode": true,
+  "charset": "ISO8859-1",
+  "extraParameters": "-basekey ini",
+  "workingDirectory": "D:\/OEWorkSpace\/myproj",
+  "numThreads": 1,
+  "buildPath": [
+    {
+      "type": "propath",
+      "path": "D:\/OEWorkSpace\/myproj"
+    },
+    {
+      "type": "propath",
+      "path": "C:\/Progress\/OpenEdge\/gui"
+    },
+    {
+      "type": "propath",
+      "path": "C:\/Progress\/OpenEdge"
+    },
+    {
+      "type": "propath",
+      "path": "C:\/Progress\/OpenEdge\/bin"
+    }
+  ],
+  "dbConnections": [
+    {
+      "name": "sports2000",
+      "connect": "-db sports2000 -dt PROGRESS -ld sports2000 -N TCP -H localhost -S 13000 -1",
+      "dumpFile": "D:/OEWorkSpace/local/dump/sports2000.df",
+      "aliases": [
+        "dictdb"
+      ]
+    }
+  ]
+}
